@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: antiquewhite;
+           display: flex;
+           }
+
+           .product{
+            border: 5px solid brown;
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            margin: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px blueviolet;
+            background-color: white;
+            
+           }
+
+
+           .product img{
+            object-fit: cover;
+            width: 100%; 
+            height: 300px;
+           }
+
+           button{
+            background-color:darkgray;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+           }
+
+           .product:hover{
+            transform: scale (1.3);
+            transition: 2s;
+            background-color: gainsboro;
+            color: brown;
+           }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- content -Any type of content - Text, Image,video,audio, form, etc.
+     border: surrounding from all 4 direction
+     padding : space inside the border- 4 direction
+     Margin: space outside the border - 4 direction-->
+
+     <div class="product ">
+        <img src="https://images.pexels.com/photos/214488/pexels-photo-214488.jpeg">
+        <h2> Mobile</h2>
+        <p> $50 </p>
+        <button> Add to cart</button>
+
+     </div>
+
+     <div class="product">
+        <img src="https://images.pexels.com/photos/34736062/pexels-photo-34736062.jpeg">
+        <h2>Heels</h2>
+        <p> $30 </p>
+        <button> Add to cart</button>
+
+     </div>
+
+     <div class="product">
+        <img src="https://images.pexels.com/photos/15487609/pexels-photo-15487609.jpeg">
+        <h2>Headphone</h2>
+        <p> $20 </p>
+        <button> Add to cart</button>
+
+     </div>
+    
+</body>
+</html>
