@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .product{
+        display: flex;
+        justify-content: center; 
+         /* this is used for fix the content in X-axis */
+         align-items: center;
+         /* this is used to fix the content in y-axis */
+         gap:30px ;
+         /* flex-direction: column; */
+
+         height: 400px;
+         background-color: beige;
+
+
+     }
+
+     .box{ 
+        border:1px solid black;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: beige;
+        font-style: italic;
+     }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Flex gives display in 1 dimesional - Either in row or column
+    bydefault - Row wise display - side by side  -->
+
+    <div class="product">
+         
+        <div class="box"> Cake</div>
+         <div class="box"> Cookies</div>
+         <div class="box"> Pastry </div>
+
+    </div>
+</body>
+</html>
