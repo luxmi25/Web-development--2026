@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: beige;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+
+         }
+         .Parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+            gap: 30px;
+
+         }
+
+         .product{
+            border: 1px solid black;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px black;
+
+         }
+
+         .product img{
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+
+         }
+    </style>
+
+
+</head>
+<body>
+    <div class="Parent">
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGlwaG9uZXxlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Iphone</h2>
+        <p>$500</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1630851278830-c0c9b12933ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNyaWNrZXQlMjBiYXR8ZW58MHx8MHx8fDA%3D">
+        <h2>Bat</h2>
+        <p>$100</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1655560378428-7605bda51749?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b25lcGx1cyUyMGVhcmJ1ZHN8ZW58MHx8MHx8fDA%3D">
+        <h2>Earbuds</h2>
+        <p>$150</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1708534246055-d7b149acb731?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHMlMjBrdXJ0aXxlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Kurti</h2>
+        <p>$90</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1682745230951-8a5aa9a474a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFuZGJhZ3xlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Handbag</h2>
+        <p>$200</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+
+
+        <div class="product"> 
+        <img src="https://images.unsplash.com/photo-1642177407897-4cae6bfe9942?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCdzJTIwd2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D">
+        <h2>Watches</h2>
+        <p>$60</p>
+        <button> Add to Cart </button>
+
+        </div>
+
+
+
+         </div>
+    
+</body>
+</html>
