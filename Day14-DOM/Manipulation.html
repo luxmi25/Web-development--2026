@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="text"> Hii Everyone</p>
+ <button id = "btn">Login</button>
+
+
+ <div id="my">This is div </div>
+ 
+    <p id = "myid"> This is Old Para</p>
+
+
+    <script>
+        //Update text content
+        const ele = document.getElementById("text")
+        ele.textContent="Hello Everone, How are you?"
+
+
+        const button = document.getElementById("btn")
+        button.textContent=" Logout"
+
+
+        //innerHTML - HElp us to update or change the content of Tag
+        const ele2 = document.getElementById("my")
+
+        // ele2.innerHTML= "<h1> This is new heading </h1>"  
+
+              ele2.innerHTML = `
+             <p> Hello This is  <mark> Updated </mark> Tag </p>
+             <em>Happy weekend</em>
+             <button> Smile </button>
+             `
+
+             const ele3 = document.getElementById("myid")
+
+             ele3.style.color = "White"
+             ele3.style.backgroundColor = "red"
+             ele3.textContent = "Hi I am new stylish Paaragraph"
+
+          
+
+        
+    </script>
+</body>
+</html>

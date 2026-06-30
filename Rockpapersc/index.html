@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Rock Paper Scissor</h1>
+
+    <div class= "choices">
+        <button class ="Rock" onclick="playGame('Rock')"> Rock</button>
+
+        <button class ="Paper"  onclick="playGame('Paper')"> Paper</button>
+        
+        <button class ="Scissor" onclick="playGame('Scissor')"> Scissor</button>
+    </div>
+
+    <p id = "result"> Choose an option to start the game </p>
+
+    <div class="Scoreboard">
+        <p> <strong> Scoreboard</strong></p>
+        <p> Wins <span id = "Wins"> 0</span></p> 
+        <p> Loose <span id = "Loose"> 0</span></p>
+        <p> Draw<span id = "draw"> 0</span></p>
+
+
+    </div>
+
+    <script>
+     let Wins =0
+     let Loose=0
+     let draw= 0
+      
+    function playGame (Userchoice){
+      const choice= ['Rock', 'Paper', 'Scissor' ]
+      const computerchoice = choices[Math.floor(Math.random()*3)]
+
+
+      let resultmessage = ""
+
+      //LOgic Game
+
+      if(Userchoice=== computerchoice){
+       resultmessage = 'You pick the same Option, It is Draw'+ Userchoice
+        draws++}
+
+        else if (
+
+        (Userchoice==='Rock' && computerchoice==='Scissor')||
+        (Userchoice==='Paper' && computerchoice===' Rock')||
+        (Userchoice==='Scissor' && computerchoice=== 'Paper')
+
+        ){ 
+            resultmessage= "You won" + Userchoice +'Beats ' + computerchoice
+            wins++
+        }else{
+                
+            resultmessage= "You Loose" + computerchoice +'Beats ' + Userchoice
+            looses++
+        }
+
+        //DOM
+
+        const ele= document.getElementById("result")
+        ele.style.color='red'
+
+         document.getElementById('result').innerHTML= resultmessage
+         document.getElementById('Wins').innerHTML=Wins
+         document.getElementById('Loose').innerHTML=Loose
+         document.getElementById('draw').innerHTML=draw
+
+     }
+
+
+    </script>
+    
+</body>
+</html>
