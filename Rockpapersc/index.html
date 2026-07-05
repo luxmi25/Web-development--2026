@@ -9,55 +9,55 @@
     <h1> Rock Paper Scissor</h1>
 
     <div class= "choices">
-        <button class ="Rock" onclick="playGame('Rock')"> Rock</button>
+        <button class="rock" onclick="playGame('rock')" > Rock</button>
 
-        <button class ="Paper"  onclick="playGame('Paper')"> Paper</button>
+        <button class="paper"  onclick="playGame('paper')" > Paper</button>
         
-        <button class ="Scissor" onclick="playGame('Scissor')"> Scissor</button>
+        <button class="scissor" onclick="playGame('scissor')" > Scissor</button>
     </div>
 
-    <p id = "result"> Choose an option to start the game </p>
+    <p id="result"> Choose an option to start the game </p>
 
     <div class="Scoreboard">
-        <p> <strong> Scoreboard</strong></p>
-        <p> Wins <span id = "Wins"> 0</span></p> 
-        <p> Loose <span id = "Loose"> 0</span></p>
-        <p> Draw<span id = "draw"> 0</span></p>
+        <p><strong> Scoreboard</strong></p>
+        <p> Wins <span id = "wins"> 0</span></p> 
+        <p> Losses <span id = "Losses"> 0</span></p>
+        <p> Draw <span id = "draws"> 0</span></p>
 
 
     </div>
 
     <script>
-     let Wins =0
-     let Loose=0
-     let draw= 0
+     let wins =0
+     let Losses=0
+     let draws =0
       
     function playGame (Userchoice){
-      const choice= ['Rock', 'Paper', 'Scissor' ]
+      const choices= ['rock', 'paper', 'scissor' ]
       const computerchoice = choices[Math.floor(Math.random()*3)]
 
 
       let resultmessage = ""
 
-      //LOgic Game
+      //Logic Game
 
       if(Userchoice=== computerchoice){
-       resultmessage = 'You pick the same Option, It is Draw'+ Userchoice
-        draws++}
+       resultmessage = 'You pick the same Option, It is Draw' +  Userchoice
+        draws++
+    }
+     else if (
 
-        else if (
-
-        (Userchoice==='Rock' && computerchoice==='Scissor')||
-        (Userchoice==='Paper' && computerchoice===' Rock')||
-        (Userchoice==='Scissor' && computerchoice=== 'Paper')
+        (Userchoice==='rock' && computerchoice==='scissor')||
+        (Userchoice==='paper' && computerchoice===' rock')||
+        (Userchoice==='scissor' && computerchoice=== 'paper')
 
         ){ 
             resultmessage= "You won" + Userchoice +'Beats ' + computerchoice
             wins++
         }else{
                 
-            resultmessage= "You Loose" + computerchoice +'Beats ' + Userchoice
-            looses++
+            resultmessage= "You Losses" + computerchoice +'Beats ' + Userchoice
+            Losses++
         }
 
         //DOM
@@ -66,9 +66,9 @@
         ele.style.color='red'
 
          document.getElementById('result').innerHTML= resultmessage
-         document.getElementById('Wins').innerHTML=Wins
-         document.getElementById('Loose').innerHTML=Loose
-         document.getElementById('draw').innerHTML=draw
+         document.getElementById('wins').innerHTML=wins
+         document.getElementById('Losses').innerHTML=Losses
+         document.getElementById('draws').innerHTML=draws
 
      }
 
